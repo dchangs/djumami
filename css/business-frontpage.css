@@ -1,0 +1,183 @@
+/*
+ * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Raleway', sans-serif;
+    background-color: #111;
+    color: #bbb;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    height: 400px;
+    background: url('../img/bg-header-edited.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-top: 50px;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+nav a {
+    color: #bbb;
+}
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+    font-weight: 700;
+    padding-left: 75px;
+}
+
+.tagline span {
+    font-weight: 400;
+}
+
+#logo {
+    text-align: left;
+}
+
+#logo img {
+    padding-top: 20px;
+    width: 220px;
+    height: 300px;
+}
+
+div#contact {
+    width: 250px;
+    text-align: right;
+}
+
+#contact h2 {
+    margin: 0;
+    font-weight: 700px;
+    text-decoration: underline;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+address p {
+    margin: 0;
+}
+
+#book {
+    text-align: center;
+    font-size: 14px;
+    background-color: #222;
+    border: 1px solid #DE0034;
+    color: #DE0034;
+    margin-top: 10px;
+    padding: 10px 35px;
+}
+
+div#work {
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+#amd {
+    margin: 0;
+    padding: 0;
+}
+
+#amd img {
+    height: 380px;
+    width: 380px;
+    padding: 20px;
+    margin: 10px;
+    float: left;
+}
+
+#amd div {
+    clear: both;
+    margin: 0;
+    padding: 50px 0;
+}
+
+#about {
+    width: 100%;
+    background-color: #282828;
+}
+
+#about p {
+    margin-right: 20px;
+}
+
+#about img {
+    margin: 100px 20px 75px 20px;
+}
+
+#music {
+    height: 500px;
+    text-align: center;
+    font-size: 40px;
+    background: url('../img/nightlife.jpg') center center no-repeat scroll;
+}
+
+#music h2 {
+    font-size: 36px;
+}
+
+#music p {
+    margin-top: 30px;
+}
+
+#music a {
+    font-size: 25px;
+    color: #222;
+}
+
+#music a:hover {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#music img {
+    float: right;
+    width: 400px;
+    height: 400px;
+    padding: 0 0 15px 0;
+    margin: 0 10px;
+}
+
+#dates {
+    background-color: #282828;
+    height: 480px;
+}
+
+#dates p {
+    margin: 30px 20px;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 50px 30px;
+}
+
+@media (max-width: 995px) {
+    #contactinfo {
+        text-align: center;
+    }
+    #contact {
+        clear: both;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+}
