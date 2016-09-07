@@ -8,7 +8,7 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     font-family: 'Raleway', sans-serif;
     background-color: #111;
-    color: #bbb;
+    color: #777;
     margin: 0;
     padding: 0;
 }
@@ -106,24 +106,26 @@ div#work {
 #about {
     width: 100%;
     background-color: #282828;
+    min-height: 510px;
 }
 
 #about p {
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 #about img {
-    margin: 100px 20px 75px 20px;
+    margin: 0 20px 75px 20px;
 }
 
 #music {
-    height: 500px;
+    min-height: 500px;
     text-align: center;
     font-size: 40px;
     background: url('../img/nightlife.jpg') center center no-repeat scroll;
 }
 
-#music h2 {
+#music h2, #dates h2, #gallery h2 {
     font-size: 36px;
 }
 
@@ -138,7 +140,7 @@ div#work {
 
 #music a:hover {
     cursor: pointer;
-    color: #fff;
+    color: #9f1faf;
     font-weight: 700;
     font-size: 30px;
     text-decoration: none;
@@ -154,11 +156,61 @@ div#work {
 
 #dates {
     background-color: #282828;
-    height: 480px;
+    min-height: 480px;
+}
+
+#dates img {
+    margin-bottom: 70px;
 }
 
 #dates p {
     margin: 30px 20px;
+    font-size: 25px;
+}
+
+#dates a span {
+    text-decoration: underline;
+    line-height: 35px;
+}
+
+#dates a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#dates a:hover {
+    cursor: pointer;
+    color: #9f1faf;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#gallery {
+    text-align: center;
+}
+
+#gallery p {
+    padding: 30px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    clear: both;
+}
+
+#gallery img {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#gallery div.row {
+    padding: 0;
+    width: 800px;
+    margin: 0 auto;
+    clear: both;
 }
 
 .img-center {
@@ -166,18 +218,133 @@ div#work {
 }
 
 footer {
-    margin: 50px 30px;
+    padding: 30px;
+    background-color: #282828;
+    margin: 40px 0 0 0;
+}
+
+#copyright, #socialmedia {
+    display: inline-block;
+}
+
+#socialmedia {
+    float: right;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#socialmedia a {
+    padding: 0 5px;
+    height: 10px;
+    width: 10px;
+    color: #777;
+}
+
+#socialmedia a:hover, #copyright:hover {
+    color: #9f1faf;
 }
 
 @media (max-width: 995px) {
     #contactinfo {
         text-align: center;
     }
-    #contact {
+    div#contact.col-sm-4 {
         clear: both;
         text-align: center;
         margin: 0 auto;
         display: block;
+        float: none;
     }
 
+    div#work.col-sm-8 {
+        float: none;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    #about img {
+        margin: 0;
+        width: 280px;
+        height: 280px;
+    }
+
+    #gallery img {
+        width: 175px;
+        height: 175px;
+    }
+
+    #gallery div.row {
+        text-align: center;
+        width: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    #music img, #dates img {
+        float: none;
+        width: 70%;
+        height: auto;
+        display: block;
+        clear: both;
+        margin: 0 auto;
+    }
+
+    #dates h2, #dates p, #music h2, #music p {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    #gallery div.row {
+        width: 100%;
+    }
+
+    #gallery img {
+        width: 25%;
+        height: auto;
+    }
+
+    #gallery p {
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    #about img {
+        width: 70%;
+        float: none;
+        height: auto;
+        display: block;
+        clear: both;
+        margin: 0 auto;
+    }
+
+    #about h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 425px) {
+    #copyright {
+        margin: 0 5px;
+        padding: 0;
+    }
+
+    #socialmedia a {
+        padding: 0 1px;
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+        text-align: center;
+    }
+    
+    #copright, #socialmedia {
+        display: block;
+        clear: both;
+        margin: 0 auto;
+        float: none;
+    }
 }
